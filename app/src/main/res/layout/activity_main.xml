@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?><!--activity_news를 대신 여기에 작성-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/mainTop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:text="역이저기!"
+            android:textColor="#222222"
+            android:textSize="30dp" />
+
+
+        <Button
+            android:id="@+id/btn_toSearch"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/dodbogi"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/info_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_margin="20dp"
+                            android:text="호선별로 알아보기 !"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="9">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:orientation="vertical"
+                                    android:weightSum="9">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="3">
+
+                                        <Button
+                                            android:id="@+id/btn_line1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:text="1" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="3">
+
+                                        <Button
+                                            android:id="@+id/btn_line4"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:text="4" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="3">
+
+                                        <Button
+                                            android:id="@+id/btn_line7"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:text="7" />
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:orientation="vertical"
+                                    android:weightSum="9">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="3">
+
+                                        <Button
+                                            android:id="@+id/btn_line2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:text="2" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="3">
+
+                                        <Button
+                                            android:id="@+id/btn_line5"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:text="5" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="3">
+
+                                        <Button
+                                            android:id="@+id/btn_line8"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:text="8" />
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:orientation="vertical"
+                                    android:weightSum="9">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="3">
+
+                                        <Button
+                                            android:id="@+id/btn_line3"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:text="3" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="3">
+
+                                        <Button
+                                            android:id="@+id/btn_line6"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:text="6" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="3">
+
+                                        <Button
+                                            android:id="@+id/btn_line9"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:text="9" />
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="오늘의 추천 역"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/todayStation"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:text="Today's Station"
+                    android:textColor="#000000"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/quizKor"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="korStation"
+                    android:textColor="@color/realWhite"
+                    android:textSize="35dp" />
+
+                <TextView
+                    android:id="@+id/quizEng"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/quizKor"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="engStation"
+                    android:textColor="@color/realWhite"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/touchToView"
+                    android:layout_width="350dp"
+                    android:layout_height="280dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="터치해서 보기"
+                    android:textSize="20dp"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!--
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+    -->
+
+
+</LinearLayout>
+
+
+

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">StationHere</string>
+    <string name="app_label">StationHere</string>
+    <string name="search_hint">Search Station...</string>
+</resources>
